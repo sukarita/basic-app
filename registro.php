@@ -42,8 +42,9 @@ function validarRegistro(){
     $_SESSION['email']=$email;
     $_SESSION['passwd']=$passwd;
 
-    }
+    header("Location: /registro2.php");
 
+}
 ?>
 
 

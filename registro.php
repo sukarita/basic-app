@@ -19,14 +19,7 @@ function validarRegistro(){
         return;
     }
 
-    $sql = "SELECT count(*) FROM proveedores WHERE email='" .$_POST['email']. " ' ";
-    $rec = mysqli_query($connect, $sql);
-    $result = mysqli_fetch_array($rec);
-
-    if ($result[0]>0){
-        echo "Correo ya existe, prueba otro";
-        return;
-    }
+   
 
 
 

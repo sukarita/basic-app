@@ -1,12 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
  * User: cristinatorres
- * Date: 10/07/14
- * Time: 12:21
  */
 
-echo "confirmado";
+//echo "confirmado"; solo para ver si ha conectado bien el archivo
 
 ?>
 
@@ -38,3 +35,19 @@ echo "confirmado";
 </head>
 
 <body>
+<!--=== Header ===-->
+<div class="navbar">
+</div>
+<!--=== End Header ===-->
+<div class="container">
+    <h1>Activa tu cuenta!</h1>
+    <hr />
+    <h2>Para completar tu registro en Prueba-APP entra en tu correo electrónico y pincha en el enlace que te hemos enviado.</h2>
+    <br />
+    <h3>Si necesitas asistencia por favor contáctanos usando nuestro <a href="contact.php">Formulario de contacto</a></h3>
+    <h3>The Systamina team.</h3>
+    <br />
+    <p><a href="index.php">Volver a la página principal</a></p>
+</div>
+</body>
+</html>

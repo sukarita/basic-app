@@ -2,7 +2,6 @@
 session_start();
 require_once "config.php"; //conecta el archivo config - base de datos
 
-//Traemos los datos guardados en sesion del registro.php
 echo $_SESSION['email'].'<br>';
 echo $_SESSION['passwd'].'<br>';
 
@@ -34,8 +33,26 @@ function validarRegistroF(){
 
     if($result[0] > 0){
          echo "Este cif ya está registrado";
-        return;
+       return;
     }
+
+    //Si supera todas nuestras comprobaciones, guardamos los datos de forma segura
+    $email = mysqli_real_escape_string($connect, $_SESSION['email']);
+    $passwd = mysqli_real_escape_string($connect, $_SESSION['passwd']);
+    $company = mysqli_real_escape_string($connect, $_POST['company']);
+    $cif = mysqli_real_escape_string($connect, $_POST['cif']);
+    $phone = mysqli_real_escape_string($connect, $_POST['phone']);
+    $name = mysqli_real_escape_string($connect, $_POST['name']);
+    $lastname = mysqli_real_escape_string($connect, $_POST['lastname']);
+    $cp = mysqli_real_escape_string($connect, $_POST['cp']);
+
+    // Hacemos el Insert en la base de datos
+    $sql = "INSERT INTO proveedores (email, passwd, company, cif, phone, name, lastname, cp, alta)
+                              VALUES('$email', '$passwd', '$company', '$cif', '$phone', '$name', '$lastname', '$cp', NOW())";
+    $rec = mysqli_query($connect, $sql);
+
+    //echo $sql; Para comprobar que datos se estan enviando a la base
+    echo 'Usted se ha registrado correctamente.';
 
 
 }

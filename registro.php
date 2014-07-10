@@ -35,11 +35,14 @@ function validarRegistro(){
         return;
     }
 
+    //Si todo esta correcto guarda datos en session
+    $email = $_POST['email'];
+    $passwd = $_POST['passwd'];
 
+    $_SESSION['email']=$email;
+    $_SESSION['passwd']=$passwd;
 
-
-
-}
+    }
 
 ?>
 

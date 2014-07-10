@@ -1,3 +1,14 @@
+<?php
+session_start();
+require_once "config.php"; //conecta el archivo config - base de datos
+
+//Traemos los datos guardados en sesion del registro.php
+echo $_SESSION['email'].'<br>';
+echo $_SESSION['passwd'].'<br>';
+
+
+?>
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="es" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="es" class="ie9"> <![endif]-->
@@ -59,7 +70,6 @@
                                 <input type="text" name="cp" class="form-control" required>
                             </div>
                         </div>
-
                         <label></label>
                         <input type="submit" name="send"class="btn btn-lg btn-sys btn-block" value="Completar Registro">
                     </form>
@@ -69,9 +79,6 @@
         <div class="col-md-3"></div>
     </div>
 </div>
-<!---
-
-
 <!--=== Form ===-->
 <!--=== JS Global Compulsory ===-->
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

@@ -15,7 +15,7 @@ if(isset($_POST['send'])){
 function validarRegistroF(){
     global $connect;
 
-    // verificamos no campos vacios
+    //Verificamos no campos vacios
     if($_POST['company'] == '' or
        $_POST['cif'] == '' or
        $_POST['phone'] == '' or
@@ -24,6 +24,17 @@ function validarRegistroF(){
        $_POST['cp'] == ''){
 
         echo "Por favor complete todos los campos";
+        return;
+    }
+
+    //Comprobar si el cif existe en base de datos
+    $sql = "SELECT count(*) FROM proveedores WHERE cif='" .$_POST['cif']. "'";
+    $rec = mysqli_query($connect, $sql);
+    $result = mysqli_fetch_array($rec);
+
+    if($result[0] > 0){
+         echo "Este cif ya está registrado";
+        return;
     }
 
 

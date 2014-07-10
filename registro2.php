@@ -13,7 +13,18 @@ if(isset($_POST['send'])){
 }
 
 function validarRegistroF(){
-    
+    global $connect;
+
+    // verificamos no campos vacios
+    if($_POST['company'] == '' or
+       $_POST['cif'] == '' or
+       $_POST['phone'] == '' or
+       $_POST['name'] =='' or
+       $_POST['lastname'] == '' or
+       $_POST['cp'] == ''){
+
+        echo "Por favor complete todos los campos";
+    }
 
 
 }
@@ -76,7 +87,7 @@ function validarRegistroF(){
                                 <label>Nombre</label>
                                 <input type="text" name="name" class="form-control" required>
                                 <label>Apellido</label>
-                                <input type="text" name="last_name" class="form-control" required>
+                                <input type="text" name="lastname" class="form-control" required>
                                 <label>Código Postal</label>
                                 <input type="text" name="cp" class="form-control" required>
                             </div>

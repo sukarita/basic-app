@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="es" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="es" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es"> <!--<![endif]-->
+<head>
+    <title>Registro Paso 2 de 2</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Systamina">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sysstyle.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- CSS Implementing Plugins -->
+
+    <!-- CSS Page Style -->
+
+    <!-- CSS Theme -->
+
+</head>
+
+<body>
+<!--=== Header ===-->
+<div class="navbar">
+</div>
+<!--=== End Header ===-->
+<div class="container">
+    <!--=== Form ===-->
+    <div class="row margin-bottom-30">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-default well well-lg">
+                <p class="">Paso 2 de 2</p>
+                <div class="panel-body">
+                    <h1 class="margin-bottom-20 text-center">Registro Proveedor</h1>
+                    <h2 class="margin-bottom-20 text-center">Datos de Empresa</h2>
+                    <form action="" method="post" class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Empresa</label>
+                                <input type="text" name="company" class="form-control" required>
+                                <label>CIF</label>
+                                <input type="text" name="cif" class="form-control" required>
+                                <label>Teléfono</label>
+                                <input type="text" name="phone" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Nombre</label>
+                                <input type="text" name="name" class="form-control" required>
+                                <label>Apellido</label>
+                                <input type="text" name="last_name" class="form-control" required>
+                                <label>Código Postal</label>
+                                <input type="text" name="cp" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <label></label>
+                        <input type="submit" name="send"class="btn btn-lg btn-sys btn-block" value="Completar Registro">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<!---
+
+
+<!--=== Form ===-->
+<!--=== JS Global Compulsory ===-->
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

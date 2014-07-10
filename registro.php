@@ -29,6 +29,12 @@ function validarRegistro(){
         return;
     }
 
+    // passwd = confpassword
+    if ($_POST['passwd'] != $_POST['confpasswd']){
+        echo 'Las claves no son iguales, intente nuevamente.';
+        return;
+    }
+
 
 
 

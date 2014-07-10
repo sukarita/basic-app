@@ -15,7 +15,7 @@ function validarRegistro(){
         $_POST['passwd'] == '' or
         $_POST['confpasswd'] == '')
     {
-        echo "Por favor complemente todos los campos";
+        echo "Por favor complete todos los campos";
         return;
     }
 

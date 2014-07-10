@@ -82,8 +82,8 @@ function validarRegistro(){
                 <div class="panel-padd">
                     <h1 class="margin-bottom-20 text-center">Registro Proveedor</h1>
                     <h2 class="margin-bottom-20 text-center">Datos de la Cuenta</h2>
-                </div>
-                <form action="" method="post" class="">
+
+                    <form action="" method="post" class="">
                     <label>Correo electrónico</label>
                     <input type="email" name="email" class="form-control" required aria-required="true" aria-describedby="Escribe tu correo electrónico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
                     <label>Contraseña</label>
@@ -93,10 +93,14 @@ function validarRegistro(){
                     <label></label>
                     <input type="submit" name="send" class="btn btn-lg btn-sys btn-block" value="Registrarme">
                 </form>
+                </div>
             </div>
         </div>
     </div>
     <div class="col-md-3"></div>
 </div>
+
+<!--=== JS Global Compulsory ===-->
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

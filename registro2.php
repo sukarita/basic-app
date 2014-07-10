@@ -7,6 +7,17 @@ echo $_SESSION['email'].'<br>';
 echo $_SESSION['passwd'].'<br>';
 
 
+//Seteamos send para llamar a la funcion validarRegistroF
+if(isset($_POST['send'])){
+    validarRegistroF();
+}
+
+function validarRegistroF(){
+    
+
+
+}
+
 ?>
 
 <!DOCTYPE html>

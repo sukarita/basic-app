@@ -3,6 +3,16 @@
 session_start();
 require_once "config.php";//conecta con config.php
 
+if (isset($_POST['send'])){
+    validarUsuario();
+}
+
+function validarUsuario(){
+    global $connect;
+
+    
+
+    }
 
 ?>
 

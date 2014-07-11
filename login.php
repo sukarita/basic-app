@@ -17,7 +17,7 @@ function validarUsuario(){
        return;
     }
 
-    //Verificamos si email y passwd existen en nuestra base
+    //Verificamos si email y passwd existen en bd
     $sql = "SELECT count(*) FROM proveedores WHERE email ='" .$_POST['email']."' AND passwd ='".$_POST['passwd']."' ";
     $rec = mysqli_query($connect, $sql);
     $result = mysqli_fetch_array($rec);
@@ -27,6 +27,11 @@ function validarUsuario(){
         return;
     }
 
+    $user = $_POST['email'];
+
+    $_SESSION['usuarioOK'] = $user;
+
+    header("Location: /welcome.php");
 
     }
 

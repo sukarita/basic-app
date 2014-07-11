@@ -17,7 +17,16 @@ function validarUsuario(){
        return;
     }
 
-   
+    //Verificamos si email y passwd existen en nuestra base
+    $sql = "SELECT count(*) FROM proveedores WHERE email ='" .$_POST['email']."' AND passwd ='".$_POST['passwd']."' ";
+    $rec = mysqli_query($connect, $sql);
+    $result = mysqli_fetch_array($rec);
+
+    if($result[0]< 1){
+        echo "Usuario no encontrado";
+        return;
+    }
+
 
     }
 

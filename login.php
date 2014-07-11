@@ -10,7 +10,14 @@ if (isset($_POST['send'])){
 function validarUsuario(){
     global $connect;
 
-    
+    //Verificamos no campos vacios
+    if($_POST['email'] == '' || $_POST['passwd'] == ''){
+
+       echo "Complementa todos los campos";
+       return;
+    }
+
+   
 
     }
 

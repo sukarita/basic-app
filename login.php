@@ -1,7 +1,8 @@
 <?php
-/**
- * User: cristinatorres
- */
+
+session_start();
+require_once "config.php";//conecta con config.php
+
 
 ?>
 
@@ -37,14 +38,13 @@
             <div class="panel panel-default well well-lg">
                 <div class="panel-padd">
                     <h1 class="margin-bottom-20 text-center">Accede a tu cuenta</h1>
-                    <h2 class="margin-bottom-20 text-center">Datos de la Cuenta</h2>
                     <form action="" method="post" class="">
                         <label>Correo electrónico</label>
                         <input type="email" name="email" class="form-control" required aria-required="true" aria-describedby="Escribe tu correo electrónico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
                         <label>Contraseña</label>
                         <input type="password" name="passwd" class="form-control">
                         <label></label>
-                        <input type="submit" name="send" class="btn btn-lg btn-sys btn-block" value="Registrarme">
+                        <input type="submit" name="send" class="btn btn-lg btn-sys btn-block" value="Acceder">
                     </form>
                 </div>
             </div>

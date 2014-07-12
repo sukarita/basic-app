@@ -58,7 +58,28 @@
 
 <!--=== /End Navbar ===-->
 
+<div class="container">
+    <div class="row">
+        <!--=== Sidebar ===-->
+        <div class="col-md-2">
+            <ul class="nav nav-stacked" id="sidebar">
+                <li><h2>Menú Principal</h2></li>
+                <li class="active"><a href="welcome.php">Inicio</a></li>
+                <li><a href="publish.php">Publicar</a></li>
+                <li><a href="edit.php">Modificar</a></li>
+                <li><a href="contact-us.php">Contáctanos</a></li>
 
+            </ul>
+        </div>
+        <!--=== /Sidebar ===-->
+
+    </div>
+</div>
+
+
+
+
+</div>
 
 <!--=== JS Global Compulsory ===-->
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>

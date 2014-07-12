@@ -72,7 +72,51 @@
             </ul>
         </div>
         <!--=== /Sidebar ===-->
+        <div class="col-md-10">
+            <br>
+            <h1 id="sec0">Tus Ofertas</h1>
+            <p>Consulta todas tus ofertas publicadas o programadas para publicación.</p>
+            <hr>
+            <!--=== Responsive Table ===--->
+            <div id="responsive-table">
+                <table>
+                <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Fechas Salida</th>
+                    <th>Fecha de Llegada</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Oferta 1</td>
+                    <td>15/10/2014</td>
+                    <td>20/10/2014</td>
+                    <td>Publicada</td>
+                    <td><button>Editar</button><button>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Oferta 2</td>
+                    <td>15/10/2014</td>
+                    <td>20/10/2014</td>
+                    <td>Programada</td>
+                    <td><button>Editar</button><button>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Oferta 3</td>
+                    <td>15/10/2014</td>
+                    <td>20/10/2014</td>
+                    <td>Publicada</td>
+                    <td><button>Editar</button><button>Eliminar</button></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        <!--=== /Responsive Table ===--->
 
+        </div>
     </div>
 </div>
 

@@ -31,14 +31,41 @@
 </head>
 
 <body>
-<!--=== Header ===-->
-<div class="navbar">
-</div>
-<!--=== End Header ===-->
-<div class="container">
-    <h1>Bienvenido</h1>
-    <hr />
+<!--=== Navbar ===-->
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Basic-APP</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="#sec">Tu Cuenta</a>
+                </li>
+                <li>
+                    <a href="logout.php">Salir</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-</div>
+<!--=== /End Navbar ===-->
+
+
+
+<!--=== JS Global Compulsory ===-->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<!--=== JS Plugins ===-->
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

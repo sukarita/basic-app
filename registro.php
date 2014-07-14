@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 require_once "config.php";//conecta con config.php
 
 
@@ -72,7 +73,7 @@ function validarRegistro(){
 <div class="navbar">
 </div>
 <!--=== End Header ===-->
-    <div class="container">
+<div class="container">
     <!--=== Form ===-->
     <div class="row margin-bottom-30">
         <div class="col-md-3"></div>
@@ -84,15 +85,15 @@ function validarRegistro(){
                     <h2 class="margin-bottom-20 text-center">Datos de la Cuenta</h2>
 
                     <form action="" method="post" class="">
-                    <label>Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" required aria-required="true" aria-describedby="Escribe tu correo electrónico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
-                    <label>Contraseña</label>
-                    <input type="password" name="passwd" class="form-control">
-                    <label>Confirmar contraseña</label>
-                    <input type="password" name="confpasswd" class="form-control">
-                    <label></label>
-                    <input type="submit" name="send" class="btn btn-lg btn-sys btn-block" value="Registrarme">
-                </form>
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email" class="form-control" required aria-required="true" aria-describedby="Escribe tu correo electrónico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                        <label>Contraseña</label>
+                        <input type="password" name="passwd" class="form-control">
+                        <label>Confirmar contraseña</label>
+                        <input type="password" name="confpasswd" class="form-control">
+                        <label></label>
+                        <input type="submit" name="send" class="btn btn-lg btn-sys btn-block" value="Registrarme">
+                    </form>
                 </div>
             </div>
         </div>

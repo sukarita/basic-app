@@ -72,6 +72,19 @@
             <h1 id="sec0">Publica una Nueva Oferta</h1>
             <p>Publica tus nuevas ofertas y deja que los usuarios te descubran.</p>
             <hr>
+            <!--=== Form ===-->
+            <form action="" method="post">
+                <h2><img style="vertical-align:middle" src="img/icons/n1.gif">  Escoge la categoría que más se adapte a la oferta que quieres publicar</h2>
+                <!--=== Section 1 ===-->
+                <div class="form-group margin-bottom-40 choose-padding">
+                    <input type="radio" name="product" value=""> Vuelos
+                    <input type="radio" name="product" value=""> Hoteles
+                    <input type="radio" name="product" value="" > Viajes
+                    <input type="radio" name="product" value="" > Cruceros
+                </div>
+                <!--=== /Section1 ===-->
+             
+            </form>
         </div>
     </div>
     <!--=== /End Row ===-->

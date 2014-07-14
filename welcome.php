@@ -4,6 +4,11 @@ session_start();
 
 require_once "config.php";
 
+/* Si no hay usuario en sesión... */
+if (!isset($_SESSION["usuarioOk"])) {
+    /* ... redirigo a login */
+    header("Location: /login.php");
+}
 
 ?>
 

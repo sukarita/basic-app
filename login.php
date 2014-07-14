@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 require_once "config.php";//conecta con config.php
 
 if (isset($_POST['send'])){
@@ -22,15 +23,16 @@ function validarUsuario(){
     $rec = mysqli_query($connect, $sql);
     $result = mysqli_fetch_array($rec);
 
+
     if($result[0]< 1){
         echo "Usuario no encontrado";
         return;
     }
 
+
     $user = $_POST['email'];
 
-    $_SESSION['usuarioOK'] = $user;
-
+    $_SESSION['usuarioOk'] = $user;
     header("Location: /welcome.php");
 
     }

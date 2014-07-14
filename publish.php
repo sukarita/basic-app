@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+require_once "config.php";
+
+
+?>
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="es" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="es" class="ie9"> <![endif]-->

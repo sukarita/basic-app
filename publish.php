@@ -83,7 +83,72 @@
                     <input type="radio" name="product" value="" > Cruceros
                 </div>
                 <!--=== /Section1 ===-->
-             
+                <!--=== Section2 ===-->
+                <div class="form-group margin-bottom-40">
+                <h2><img style="vertical-align:middle" src="img/icons/n2.gif"> Escoge el destino de tu oferta</h2>
+                    <!--=== Tree ===-->
+                    <div class="choose-padding">
+                    <div style="">
+                        <ul class="nav nav-list">
+                            <li><label class="tree-toggler nav-header">América</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Caribe</a></li>
+                                    <li><a href="#">Estados Unidos</a></li>
+                                    <li><label class="tree-toggler nav-header">México</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Riviera Maya</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><label class="tree-toggler nav-header">África</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Marruecos</a></li>
+                                    <li><a href="#">Sahara</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><label class="tree-toggler nav-header">Asia</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">China</a></li>
+                                    <li><a href="#">Tailandia</a></li>
+                                    <li><a href="#">Birmania</a></li>
+                                    <li><a href="#">Camboya</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><label class="tree-toggler nav-header">Europa</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><label class="tree-toggler nav-header">Header 2.1</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><label class="tree-toggler nav-header">Header 2.2</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><label class="tree-toggler nav-header">Oceanía</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+                    <!--=== /Tree ===-->
+                </div>
+                <!--=== /Section2 ===-->
             </form>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require_once "config.php"; //conecta el archivo config - base de datos
 
 /**
@@ -53,12 +54,12 @@ function validarRegistroF(){
                               VALUES('$email', '$passwd', '$company', '$cif', '$phone', '$name', '$lastname', '$cp', NOW())";
     $rec = mysqli_query($connect, $sql);
 
-    //echo $sql; Para comprobar que datos se estan enviando a la base
+    //echo $sql; //Para comprobar que datos se estan enviando a la base
 
     //Una vez comprobado ya no es util xq ya existe redireccionamiento desde action ="confirm.php"
     //echo 'Usted se ha registrado correctamente.';
 
-
+    header("Location: /confirm.php");
 }
 
 ?>
@@ -105,7 +106,7 @@ function validarRegistroF(){
                 <div class="panel-body">
                     <h1 class="margin-bottom-20 text-center">Registro Proveedor</h1>
                     <h2 class="margin-bottom-20 text-center">Datos de Empresa</h2>
-                    <form action="confirm.php" method="post" class="">
+                    <form action="" method="post" class="">
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Empresa</label>
